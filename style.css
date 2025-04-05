@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+font-family: "Poppins", sans-serif;
+font-family: "Montserrat", sans-serif;
+*/
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--yellow);
+    margin-top: 200px;
+}
+
+.card {
+    background-color: white;
+    width: 360px;
+    height: 540px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 8px 8px 0px 2px;
+}
+
+.card #card-img {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.card a {
+    margin-left: 12px;
+    text-decoration: none;
+    background-color: var(--yellow);
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 600;
+}
+
+div p:nth-of-type(2) {
+    margin: 15px 0px 0px 12px;
+  }
+
+.card h3 {
+    margin: 15px 0px 0px 12px;
+    font-size: 25px;
+    color: var(--yellow);
+}
+
+div p:nth-of-type(3) {
+    margin: 5px 12px 0px 12px;
+    opacity: 0.4;
+    text-align: justify;
+}
+
+.credit {
+    display: flex;
+    margin: 30px 12px auto;
+}
+
+.credit img {
+    height: 50px;
+}
+
+.credit h4 {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    
+
+    .card {
+        width: 70%;
+        margin-top: -100px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    div p:nth-of-type(3) {
+        font-size: 14px;
+    }
+
+    .credit img {
+        max-width: 20%;
+        height: auto;
+    }
+}
